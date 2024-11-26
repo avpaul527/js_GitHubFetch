@@ -1,0 +1,84 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/bradobrei */
+@import "https://fonts.fontstorage.com/import/bradobrei.css";
+/*
+	Bradobrei, 400
+*/
+
+body { 
+    font-family: Bradobrei;
+    background-image: url('https://hydraulic.dev/assets/images/blog/github-actions.webp');
+    background-color: red;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: black;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+h2, p {
+    margin: 10px 0;
+    color: rgb(198, 141, 213);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(238, 201, 234);
+}
+
+
+@media (max-width: 600px) {
+    .profile-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
